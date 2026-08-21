@@ -1,27 +1,192 @@
-<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Untuk Wangi Kecilku ❤️</title><link rel="stylesheet" href="style.css"></head><body><div class="bg" id="bg"></div><audio id="music" loop><source src="assets/music.mp3" type="audio/mpeg"></audio><div class="slider">
-<section class="slide active"><div class="card"><div class="heart">❤️</div><h1>Untuk kamu Wangi Kecilku❤️</h1><p>Sayangggg, aku punya sesuatu yang ingin aku sampaikan dari hati.</p><button onclick="playMusic();nextSlide()">Buka Surat ❤️</button></div></section>
-<section class="slide"><div class="card"><img src="assets/foto-kamu.jpeg" class="photo" alt="Foto Kamu"><h2>Sayangggg,</h2><p>Aku kan orangnya nggak pandai merangkai kata-kata, jadi aku tulis apa yang bener bener ta rasain.
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Wangi Kecilku ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-Terima kasih sudah hadir di hidupku, sudah mau menemani aku sampai sejauh ini, dan sudah menjadi seseorang yang begitu berarti buatku.</p></div></section>
-<section class="slide"><div class="card"><h2>Aku ingin kamu tahu satu hal...</h2><p>Aku tahu aku masih banyak kurangnya. Kadang mungkin aku bikin kamu kesal, kecewa, marah, atau belum bisa menjadi seperti yang kamu harapkan.
+<body>
 
-Tapi satu hal yang pasti, aku sayang bangett sama kamu dan aku serius sama hubungan kita🥺.</p></div></section>
-<section class="slide"><div class="card open-package"><div class="gift">🎁</div><h1>Sebentar yaa cantikkuu... ❤️</h1><p>Sebelum lanjut baca surat ini, ada satu hal yang aku minta sama kamu.</p><p class="highlight">Tolong buka paketnya sekarang yaa...🥺</p><p>Aku pengen kamu melihat isi paket itu dulu, baru setelah itu lanjut ke slide berikutnya.</p><button onclick="nextSlide()">Aku udah buka ❤️</button></div></section>
-<section class="slide"><div class="card"><h2>Masa depan kita ❤️</h2></p></div></section>
-<section class="slide"><div class="card"><div class="ring"></div><h2>Untuk cincin ini 💍</h2><p>Cincin ini bukan cuma hadiah dari aku.
+    <div class="bg" id="bg"></div>
 
-Tapi ingin ini menjadi tanda kalau aku ingin terus bersama kamu dan membawa hubungan kita ke arah yang lebih serius.<p>Aku nggak tahu apa yang akan terjadi ke depannya, tapi aku ingin melewati semuanya sama kamu.
+    <audio id="music" loop>
+        <source src="assets/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="slider">
+
+        <!-- Slide 1 -->
+        <section class="slide active">
+            <div class="card">
+                <div class="heart">❤️</div>
+                <h1>Untuk kamu Wangi Kecilku❤️</h1>
+                <p>Sayangggg, aku punya sesuatu yang ingin aku sampaikan dari hati.</p>
+                <button onclick="playMusic(); nextSlide();">Buka Surat ❤️</button>
+            </div>
+        </section>
+
+        <!-- Slide 2 -->
+        <section class="slide">
+            <div class="card">
+                <img src="assets/foto-kamu.jpeg" class="photo" alt="Foto Kamu">
+
+                <h2>Sayangggg,</h2>
+
+                <p>
+Aku kan orangnya nggak pandai merangkai kata-kata, jadi aku tulis apa yang bener bener ta rasain.
+
+Terima kasih sudah hadir di hidupku, sudah mau menemani aku sampai sejauh ini, dan sudah menjadi seseorang yang begitu berarti buatku.
+                </p>
+            </div>
+        </section>
+
+        <!-- Slide 3 -->
+        <section class="slide">
+            <div class="card">
+
+                <h2>Aku ingin kamu tahu satu hal...</h2>
+
+                <p>
+Aku tahu aku masih banyak kurangnya. Kadang mungkin aku bikin kamu kesal, kecewa, marah, atau belum bisa menjadi seperti yang kamu harapkan.
+
+Tapi satu hal yang pasti, aku sayang bangett sama kamu dan aku serius sama hubungan kita🥺.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- Slide 4 -->
+        <section class="slide">
+            <div class="card open-package">
+
+                <div class="gift">🎁</div>
+
+                <h1>Sebentar yaa cantikkuu... ❤️</h1>
+
+                <p>
+Sebelum lanjut baca surat ini, ada satu hal yang aku minta sama kamu.
+                </p>
+
+                <p class="highlight">
+Tolong buka paketnya sekarang yaa...🥺
+                </p>
+
+                <p>
+Aku pengen kamu melihat isi paket itu dulu, baru setelah itu lanjut ke slide berikutnya.
+                </p>
+
+                <button onclick="reveal(); nextSlide();">
+                    Aku udah buka ❤️
+                </button>
+
+            </div>
+        </section>
+
+        <!-- Slide 5 -->
+        <section class="slide">
+            <div class="card">
+
+                <div class="ring"></div>
+
+                <h2>Untuk cincin ini 💍</h2>
+
+                <p>
+Cincin ini bukan cuma hadiah dari aku.
+
+Tapi ingin ini menjadi tanda kalau aku ingin terus bersama kamu dan membawa hubungan kita ke arah yang lebih serius.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- Slide 6 -->
+        <section class="slide">
+            <div class="card">
+
+                <h2>Masa depan kita ❤️</h2>
+
+                <p>
+Aku nggak tahu apa yang akan terjadi ke depannya, tapi aku ingin melewati semuanya sama kamu.
 
 Maukah kamu terus bersamaku dan menjadi bagian dari masa depanku?
 
-Semoga kita bisa terus saling menjaga, saling menguatkan, dan tetap memilih satu sama lain.</p></div></section>
-<section class="slide"><div class="card"><div class="heart">💖</div><h2>Maaf ya cantikkuu...</h2><p>Maaf kalau cincin ini sederhana dan mungkin belum seperti yang kamu bayangkan.
+Semoga kita bisa terus saling menjaga, saling menguatkan, dan tetap memilih satu sama lain.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- Slide 7 -->
+        <section class="slide">
+            <div class="card">
+
+                <div class="heart">💖</div>
+
+                <h2>Maaf ya cantikkuu...</h2>
+
+                <p>
+Maaf kalau cincin ini sederhana dan mungkin belum seperti yang kamu bayangkan.
 
 Aku memberikan ini bukan karena harganya, tapi karena aku ingin kamu tahu kalau aku benar-benar serius sama kamu.
 
-Semoga kamu mau menerima dan memakainya, biar setiap kali kamu melihat cincin ini, kamu ingat sama aku dan semua niat baikku untuk kita. ❤️</p></div></section>
-<section class="slide"><div class="card"><div class="heart">❤️</div><h2>Terakhir...</h2><p>Sekali lagi aku minta maaf ya cantikkuu, untuk kali ini aku belum bisa ngasih cincin ini langsungg ke kamu🥺.</p><button onclick="nextSlide()">Lanjut ❤️</button></div></section>
-<section class="slide"><div class="card"><div class="heart">❤️</div><h1>Aku sayang kamu.</h1><p>Aku cinta kamu. ❤️
+Semoga kamu mau menerima dan memakainya, biar setiap kali kamu melihat cincin ini, kamu ingat sama aku dan semua niat baikku untuk kita. ❤️
+                </p>
 
-Aku Kangen kamu. ❤️</p><div class="signature">Dari: Putradk🐶</div></div></section>
-</div><div class="nav"><button onclick="prevSlide()">‹</button><div id="dots" class="dots"></div><button onclick="nextSlide()">›</button></div><script src="script.js"></script></body></html>
+            </div>
+        </section>
+
+        <!-- Slide 8 -->
+        <section class="slide">
+            <div class="card">
+
+                <div class="heart">❤️</div>
+
+                <h2>Terakhir...</h2>
+
+                <p>
+Sekali lagi aku minta maaf ya cantikkuu, untuk kali ini aku belum bisa ngasih cincin ini langsungg ke kamu🥺.
+                </p>
+
+                <button onclick="nextSlide();">
+                    Lanjut ❤️
+                </button>
+
+            </div>
+        </section>
+
+        <!-- Slide 9 -->
+        <section class="slide">
+            <div class="card">
+
+                <div class="heart">❤️</div>
+
+                <h1>Aku sayang kamu.</h1>
+
+                <p>
+Aku cinta kamu. ❤️
+
+Aku Kangen kamu. ❤️
+                </p>
+
+                <div class="signature">
+                    Dari: Putradk🐶
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Navigasi -->
+    <div class="nav">
+        <button onclick="prevSlide()">‹</button>
+        <div id="dots" class="dots"></div>
+        <button onclick="nextSlide()">›</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
