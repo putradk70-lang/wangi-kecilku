@@ -1,0 +1,1 @@
+Ganti foto-kamu.jpg dan music.mp3 di folder assets.
