@@ -246,3 +246,8 @@ music.addEventListener("play", () => {
 
     }, 120);
 });
+// Tambahkan ini
+window.openEnvelope = openEnvelope;
+window.nextSlide = nextSlide;
+window.prevSlide = prevSlide;
+window.reveal = reveal;
